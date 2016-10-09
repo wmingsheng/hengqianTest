@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="的减肥第结束了空间的覅偶尔就立刻就死了"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"/>
+
+    <com.example.administrator.myapplication.TestDome.YourView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        text:textsize="25"
+        text:textcolor="@color/blue"
+        android:id="@+id/yourView"
+       />
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_title"
+        android:icon="@mipmap/ic_launcher"
+        android:title="my application"
+        android:showAsAction="always" />
+    <item android:id="@+id/memu_tt2"
+        android:icon="@mipmap/ic_launcher"
+        android:title="application2"
+        android:showAsAction="withText"/>
+    <item android:id="@+id/memu_tt3"
+        android:icon="@mipmap/ic_launcher"
+        android:title="application3"
+        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/memu_tt4"
+        android:icon="@mipmap/ic_launcher"
+        android:title="application4"
+        android:showAsAction="never"/>
+    <item android:id="@+id/memu_tt5"
+        android:icon="@mipmap/ic_launcher"
+        android:title="application5"
+        android:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/menu_search"
+        android:title="menu_search"
+        android:showAsAction="always"/>
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.administrator.myapplication.TestDome.OutsideLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outside_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/holo_blue_light">
+
+    <com.example.administrator.myapplication.TestDome.InsideLayout
+        android:id="@+id/inside_layout"
+        android:layout_width="280dp"
+        android:layout_height="360dp"
+        android:gravity="center"
+        android:background="@android:color/holo_green_light">
+
+        <com.example.administrator.myapplication.TestDome.MyView
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_light"
+            android:id="@+id/myView"
+            android:text="Hello World ...."/>
+
+    </com.example.administrator.myapplication.TestDome.InsideLayout>
+
+</com.example.administrator.myapplication.TestDome.OutsideLayout>
