@@ -12,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -27,8 +26,8 @@ import static android.view.MotionEvent.ACTION_DOWN;
 
 public class AppManagerActivity extends Activity implements View.OnClickListener{
     private static final String TAG = AppManagerActivity.class.getSimpleName();
-    private Button start_btn;
-    private Button stop_btn;
+    private TextView start_btn;
+    private TextView stop_btn;
     private WindowManager mManager;
     private WindowManager.LayoutParams mParams;
     private LinearLayout mLayout;
@@ -45,7 +44,7 @@ public class AppManagerActivity extends Activity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_main_layout);
         mContext = this;
-//        initView();
+        initView();
 
         ViewGroup group = (ViewGroup) findViewById(R.id.manager_layout);
         for (int i = 0; i < group.getChildCount(); i++) {
@@ -56,8 +55,8 @@ public class AppManagerActivity extends Activity implements View.OnClickListener
 
 
     private void initView() {
-        start_btn = (Button) findViewById(R.id.start_btn);
-        stop_btn = (Button) findViewById(R.id.stop_btn);
+        start_btn = (TextView) findViewById(R.id.start_btn);
+        stop_btn = (TextView) findViewById(R.id.stop_btn);
         start_btn.setOnClickListener(this);
         stop_btn.setOnClickListener(this);
 
@@ -160,7 +159,7 @@ public class AppManagerActivity extends Activity implements View.OnClickListener
                     case MotionEvent.ACTION_UP:
                         dx = (int) (event.getRawX() - startX);
                         dy = (int) (event.getRawY() + startY);
-                        if (Math.abs(dx) > 2 || Math.abs(dy) > 2){
+                        if (Math.abs(dx) > 5 || Math.abs(dy) > 5){
                             return true;
                         }
                         break;
